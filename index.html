@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Атлант Консалт — Продажа грузовых автомобилей и лизинг
+    </title>
+    
+    <meta
+        name="description"
+        content="Продажа тягачей Volvo, Scania, MAN и Mercedes-Benz. Лизинг коммерческого транспорта для бизнеса."
+    >
+
+    <meta
+        name="keywords"
+        content="лизинг грузовых авто, тягачи, продажа грузовиков, Volvo FH, Scania R"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container header-container">
+
+        <div class="logo-block">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/744/744465.png"
+                alt="Логотип Атлант Консалт"
+                class="logo-img"
+            >
+
+            <div class="logo-text">
+                <h2>Атлант Консалт</h2>
+                <p>Грузовой транспорт и лизинг</p>
+            </div>
+
+        </div>
+
+        <nav class="nav">
+
+            <a href="#about">О компании</a>
+
+            <a href="#catalog">Каталог</a>
+
+            <a href="#leasing">Лизинг</a>
+
+            <a href="#reviews">Отзывы</a>
+
+            <a href="#contacts">Контакты</a>
+
+        </nav>
+
+        <button class="mobile-btn" id="mobileBtn">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#about">О компании</a>
+
+    <a href="#catalog">Каталог</a>
+
+    <a href="#leasing">Лизинг</a>
+
+    <a href="#reviews">Отзывы</a>
+
+    <a href="#contacts">Контакты</a>
+
+</div>
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+                Надёжный партнёр для бизнеса
+            </span>
+
+            <h1>
+                Продажа и лизинг грузовых автомобилей
+            </h1>
+
+            <p>
+                Более 150 единиц техники в наличии.
+                Работаем с ведущими брендами:
+                Volvo, Scania, MAN и Mercedes-Benz.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button id="openModal">
+                    Оставить заявку
+                </button>
+
+                <a href="#catalog" class="catalog-btn">
+                    Смотреть каталог
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat">
+            <h2>11 лет</h2>
+            <p>на рынке</p>
+        </div>
+
+        <div class="stat">
+            <h2>150+</h2>
+            <p>автомобилей</p>
+        </div>
+
+        <div class="stat">
+            <h2>2400+</h2>
+            <p>клиентов</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>поддержка</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-top">
+
+            <span>О компании</span>
+
+            <h2>
+                Атлант Консалт — поставщик коммерческого транспорта
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+
+                <h3>Продажа техники</h3>
+
+                <p>
+                    Новые и проверенные грузовые автомобили
+                    для логистики, строительства и международных перевозок.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>Лизинг</h3>
+
+                <p>
+                    Оформление лизинга от 10% первоначального взноса
+                    с быстрым одобрением.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>Сервис</h3>
+
+                <p>
+                    Помощь в регистрации, страховании и техническом обслуживании.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="catalog" id="catalog">
+
+    <div class="container"><div class="section-top">
+
+            <span>Каталог</span>
+
+            <h2>
+                Популярные модели
+            </h2>
+
+        </div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                Все
+            </button>
+
+            <button class="filter-btn" data-filter="volvo">
+                Volvo
+            </button>
+
+            <button class="filter-btn" data-filter="scania">
+                Scania
+            </button>
+
+            <button class="filter-btn" data-filter="man">
+                MAN
+            </button>
+
+        </div>
+
+        <div class="catalog-list" id="catalogList"></div>
+
+    </div>
+
+</section>
+
+<section class="leasing" id="leasing">
+
+    <div class="container">
+
+        <div class="section-top">
+
+            <span>Лизинг</span>
+
+            <h2>
+                Как проходит оформление
+            </h2>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>1</span>
+                <h3>Заявка</h3>
+                <p>Оставляете заявку на сайте</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h3>Подбор</h3>
+                <p>Помогаем выбрать технику</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h3>Одобрение</h3>
+                <p>Получаем решение за 1 день</p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h3>Получение</h3>
+                <p>Передаём автомобиль клиенту</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <div class="container">
+
+        <div class="section-top">
+
+            <span>Отзывы</span>
+
+            <h2>
+                Что говорят клиенты
+            </h2>
+
+        </div>
+
+        <div class="reviews-list">
+
+            <div class="review">
+
+                <p>
+                    “Оформили Volvo FH за 2 дня.
+                    Всё быстро и без гемора.”
+                </p>
+
+                <h4>
+                    ООО «ТрансЛогистик»
+                </h4>
+
+            </div>
+
+            <div class="review">
+
+                <p>
+                    “Нормальные цены и адекватные менеджеры.
+                    Помогли с документами.”
+                </p>
+
+                <h4>
+                    ИП Ковалёв
+                </h4>
+
+            </div>
+
+            <div class="review">
+
+                <p>
+                    “Техника реально в наличии,
+                    а не как у половины сайтов.”
+                </p>
+
+                <h4>
+                    ГК «СеверТранс»
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contacts" id="contacts">
+
+    <div class="container contacts-container">
+
+        <div>
+
+            <h2>Контакты</h2>
+
+            <p>
+                Телефон: +7 (495) 765-43-21
+            </p>
+
+            <p>
+                Email: info@atlant-consult.ru
+            </p>
+
+            <p>
+                Москва, Ленинградское шоссе, 63
+            </p>
+
+        </div>
+
+        <form class="contact-form" id="form">
+
+            <input type="text" placeholder="Ваше имя" required>
+
+            <input type="tel" placeholder="Телефон" required>
+
+            <button type="submit">
+                Отправить заявку
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 Атлант Консалт
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>
+            Заявка отправлена
+        </h2>
+
+        <p>
+            Менеджер свяжется с вами в ближайшее время.
+        </p>
+
+        <button id="closeModal">
+            Отлично
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
